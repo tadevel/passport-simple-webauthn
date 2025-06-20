@@ -1,6 +1,6 @@
 {
-  "name": "passport-simple-webauthn",
-  "version": "0.1.1",
+  "name": "@tadevel/passport-simple-webauthn",
+  "version": "0.0.1",
   "description": "Integrate the verification process of @simplewebauthn/server with passportjs",
   "type": "module",
   "keywords": [
@@ -13,7 +13,7 @@
     "server",
     "fido2"
   ],
-  "author": "DamianoPellegrini <damiano1.pellegrini@gmail.com>",
+  "author": "Alejandro Torrado <aletorrado@gmail.com>",
   "license": "MIT",
   "scripts": {
     "prebuild": "rimraf ./dist",
