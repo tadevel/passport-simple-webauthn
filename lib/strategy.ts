@@ -2,8 +2,6 @@ import { Strategy as PassportStrategy } from 'passport';
 import * as webauthn from '@simplewebauthn/server';
 import type {
   AuthenticationResponseJSON,
-  AuthenticatorDevice,
-  CredentialDeviceType,
   RegistrationResponseJSON,
 } from '@simplewebauthn/typescript-types';
 import type { Request } from 'express';
