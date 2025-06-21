@@ -10,7 +10,7 @@ import type { Request } from 'express';
  * Represent what we need to be stored in a session like storage
  */
 export interface SessionData<User extends { id: string }> {
-  challenge: string;
+  challenge: string | ((challenge: string )=>boolean) | ((challenge: string )=>Promise<boolean>);
   user?: User;
 }
 
@@ -83,8 +83,8 @@ export type RegistrationFn<User extends { id: string }, Error> = (
 export interface StrategyOptions<User extends { id: string }> {
   passReqToCallback?: boolean;
   extractor: ChallengeExtractorFn<User>;
-  expectedRPID: string;
-  expectedOrigin?: string;
+  expectedRPID: string|string[];
+  expectedOrigin?: string|string[];
   supportedAlgorithmIDs?: number[];
   requireUserVerification?: boolean;
 }
