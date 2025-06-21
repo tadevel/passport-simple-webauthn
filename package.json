@@ -1,6 +1,6 @@
 {
   "name": "@tadevel/passport-simple-webauthn",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Integrate the verification process of @simplewebauthn/server with passportjs",
   "type": "module",
   "keywords": [
